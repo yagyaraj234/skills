@@ -1,0 +1,4 @@
+interface:
+  display_name: "Frontend Readiness"
+  short_description: "Check frontend changes or release readiness"
+  default_prompt: "Use $frontend-readiness to assess the current frontend diff."
