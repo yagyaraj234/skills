@@ -1,0 +1,4 @@
+interface:
+  display_name: "Backend Readiness"
+  short_description: "Check backend changes or release readiness"
+  default_prompt: "Use $backend-readiness to assess the current backend diff."

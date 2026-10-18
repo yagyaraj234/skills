@@ -1,0 +1,4 @@
+interface:
+  display_name: "Check Readiness"
+  short_description: "Review a diff, PR, release, or repository"
+  default_prompt: "Use $check-readiness to assess the current diff and report readiness."
