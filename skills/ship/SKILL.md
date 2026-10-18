@@ -1,5 +1,5 @@
 ---
-name: pr
+name: ship
 description: Open a PR (or update an open one) with a readiness check and a clear description. Use when asked to create a PR, open a PR, or write a PR description.
 disable-model-invocation: true
 ---
