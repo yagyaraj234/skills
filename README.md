@@ -24,7 +24,13 @@ The CLI detects your agent (Claude Code, Codex, Cursor, and others) and puts the
 | [`backend-readiness`](skills/backend-readiness/SKILL.md) | `/backend-readiness [mode]` | You are reviewing APIs, workers, webhooks, databases, or services: validation, authn/authz, payments, migrations, secrets, tests. |
 | [`frontend-readiness`](skills/frontend-readiness/SKILL.md) | `/frontend-readiness [mode]` | You are reviewing app UI: routes, forms, state, empty/loading/error states, accessibility, performance, unsafe rendering. |
 | [`bro`](skills/bro/SKILL.md) | `/bro` | An answer is too jargon-heavy. Rewrites the last message in plain, short human language. Manual only. |
+| [`babysit`](skills/babysit/SKILL.md) | `/babysit "why did we choose this?"` | You want the reasons and tradeoffs behind code or a decision. Uses `walkthrough` internally, then investigates history and available connected sources. Manual only. |
+| [`walkthrough`](skills/walkthrough/SKILL.md) | `/walkthrough "how does this work?"` | You want a patient, step-by-step explanation of a topic or your app's execution and data flow, grounded in current code. Also used internally by `babysit`. |
 | [`ship`](skills/ship/SKILL.md) | `/ship` | Runs a readiness check, then opens or updates a PR with a clear description. Manual only. |
+
+Install `babysit` and `walkthrough` together. `babysit` uses `walkthrough` to trace the current code before researching the reasons behind it.
+
+Both skills read the implementation and cite the source behind their explanations. Project documentation is optional supporting material; missing docs do not prevent a source-based explanation, and a documentation summary alone does not complete one.
 
 ### Readiness modes
 
